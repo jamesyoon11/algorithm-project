@@ -82,8 +82,8 @@ const SortToolbar: React.FC<SortToolbarProps> = ({toolbarHeight}) => {
                 <form className="sort-toolbar-form">
                     <select className="sort-config-selector data-select" disabled={isDisabled}
                             onChange={updateSortDataSize} value={sortState.sortDataSize} >
-                    {   Array(197).fill(null).map(function (x, index) {
-                            const size = index + 104;
+                    {   Array(77).fill(null).map(function (x, index) {
+                            const size = index + 4;
                             return (
                                 <option key={index} value={size}>{size}</option>
                             )

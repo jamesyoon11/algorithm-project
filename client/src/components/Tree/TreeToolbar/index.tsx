@@ -32,12 +32,12 @@ const TreeToolbar: React.FC <TreeToolbarProps>  = ({toolbarHeight}) => {
     useEffect(() => {
         if (treeAlgorithm === 'bst') {
             setTreeTitle('Binary Search Tree');
-            $('#extractTreeNodeButton').hide();
-            $('#deleteTreeNodeSelect').show();
+            document.querySelector('#extractTreeNodeButton').style.display = 'none';
+            document.querySelector('#deleteTreeNodeSelect').style.display = 'block';
         } else if (treeAlgorithm === 'heap') {
             setTreeTitle('Heap Tree');
-            $('#extractTreeNodeButton').show();
-            $('#deleteTreeNodeSelect').hide();
+            document.querySelector('#extractTreeNodeButton').style.display = 'block';
+            document.querySelector('#deleteTreeNodeSelect').style.display = 'none';
         }
         generateSampleTree();
         // dispatch({ type: "updateTreeScreen", rootNode: rootNode, algorithm: treeAlgorithm, updateStep: treeState.updateStep++ });

@@ -1,0 +1,54 @@
+.sort-bar {
+  background:  linear-gradient(to right, rgba(0, 191, 255) 90%, white 10%);
+  color: white;
+  align-self: flex-end;
+  padding-top: 7px;
+  font-weight: 700;
+  bottom: 0;
+  height: 0;
+  left: 0px;
+  font-family: 'Verdana';
+}
+
+.sorting-bar {
+  background:  linear-gradient(to right, rgba(0, 255, 68) 90%, white 10%);
+  color: white;
+  align-self: flex-end;
+  padding-top: 7px;
+  font-weight: 700;
+  bottom: 0;
+  height: 0;
+  left: 0px;
+}
+
+.comparing-bar {
+  background:  linear-gradient(to right, rgba(255, 0, 255) 90%, white 10%);
+  color: white;
+  align-self: flex-end;
+  padding-top: 7px;
+  font-weight: 700;
+  bottom: 0;
+  height: 0;
+  left: 0px;
+}
+
+.pivot-bar {
+  background:  linear-gradient(to right, rgba(255, 255, 0) 90%, white 10%);
+  color: white;
+  align-self: flex-end;
+  padding-top: 7px;
+  font-weight: 700;
+  bottom: 0;
+  height: 0;
+  left: 0px;
+}
+
+.sort-bar-text {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  font-size: 0.6em;
+  padding-left: 2em;
+  padding-top: 0.4em;
+}

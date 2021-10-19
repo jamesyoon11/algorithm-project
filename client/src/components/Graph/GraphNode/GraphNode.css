@@ -1,0 +1,237 @@
+.graph {
+  width: 2em;
+  height: 2em;
+}
+
+.node {
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.node-selected {
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+.node-start {
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 255, 255);
+    cursor: pointer;
+}
+
+.node-end {
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 0, 255);
+    cursor: pointer;
+}
+
+.node-visited {
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.node-path {
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    border-style: solid;
+    border-color: rgba(0, 255, 0, 1);
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 255, 0, 1);
+}
+
+.node-start-path {
+  border-color: rgba(0, 255, 0, 1);
+  z-index: 1;
+}
+
+.node-end-path {
+  border-color: rgba(0, 255, 0, 1);
+  z-index: 1;
+}
+
+.node-wall {
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.node-start-drag {
+   background-color: rgba(0, 255, 255, 0.4);
+}
+
+.node-end-drag {
+  background-color: rgba(255, 0, 255, 0.3);
+}
+
+.vertical-edge {
+  height: 100%;
+  background-color: black;
+  width: 1px;
+  position: relative;
+}
+
+.horizonal-edge {
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+}
+
+.top {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-edge {    
+}
+
+.bottom {
+  height: 20%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-edge {
+}
+
+.middle {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-edge {
+}
+
+.left {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-edge {
+}
+
+.top-weight {
+  font-size: 0.4em;
+  line-height: 0.1em;
+  margin: 0.3em;
+}
+
+.left-weight {
+  font-size: 0.4em;
+  line-height: 1em;
+}
+
+.right-weight {
+  font-size: 0.3em;
+  position: absolute;
+  bottom: 0.3em;
+  width: 1.6em;
+  text-align: center;
+}
+
+.bottom-weight {
+  font-size: 0.3em;
+  padding-left: 0.2em;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+}
+
+.selected-path {
+  background-color: rgba(0, 255, 0, 1);
+}
+
+.path-weight {
+  text-shadow: 0 0 0.3em rgb(0 ,255, 0, 1), 0 0 0.4em rgb(0, 255, 0, 1), 0 0 0.5em rgb(0, 255, 0, 1)
+}
+
+.none {
+  display: none;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    background-color: transparent;
+    color: transparent;
+  }
+  100% {
+      border:1px solid black;
+  }
+}

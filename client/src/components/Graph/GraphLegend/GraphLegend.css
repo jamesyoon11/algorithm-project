@@ -1,0 +1,44 @@
+.graph-legend {
+  width: 100%;
+  font-family: Verdana,sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0.5em;
+}
+
+.graph-legend .node {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    display: inline-block;
+    border-width: 0;
+    cursor: default;
+}
+
+.graph-legend .node.start-node {
+    background-color: rgb(0, 255, 255);
+}
+
+.graph-legend .node.end-node {
+    background-color: rgb(255, 0, 255);
+}
+
+.graph-legend .node.wall-node {
+    background-color: gray;
+}
+
+.graph-legend .node.visited-node {
+    background-color: yellow;
+}
+
+.graph-legend .node.path-node {
+    background-color: rgba(0, 255, 0, 1);
+}
+
+.graph-legend .legend-label {
+  font-size:  0.6em;
+  margin: 0 2em 0 0.5em;
+  font-style: italic;
+  color: #555;
+}
